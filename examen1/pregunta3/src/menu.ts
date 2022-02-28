@@ -1,6 +1,9 @@
 import { MenuOptions, Memory } from './models';
 
+// This function is in charge of managing the user selected option to display 
+// an error or the desired memory operation
 const menu = (memory: Memory, opt: MenuOptions) => {
+  // Para leer la intrucción dada por el usuario y determinar si hubo errores de entrada
   const splittedOpt = opt.split(' ');
 
   switch (splittedOpt[0]) {
